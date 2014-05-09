@@ -340,8 +340,8 @@ int evalPos(BOARD *board){
 	// Material Eval
 	const int whiteMaterial = (cWhitePawn + 3 * (cWhiteKnight + cWhiteBishop) + 5 * cWhiteRook + 9 * cWhiteQueen);
 	const int blackMaterial = (cBlackPawn + 3 * (cBlackKnight + cBlackBishop) + 5 * cBlackRook + 9 * cBlackQueen);
-	score += 105*whiteMaterial;
-	score -= 105*blackMaterial;
+	score += (80+whiteMaterial/blackMaterial*20)*whiteMaterial;
+	score -= (80+blackMaterial/whiteMaterial*20)*blackMaterial;
 	if(cBlackBishop > 1){
 		score -= 30;	
 	}
@@ -396,9 +396,10 @@ int evalPos(BOARD *board){
 	}
 	
 	// Open file bonus
-	if(whiteMaterial + blackMaterial < 60){
+	if(whiteMaterial + blackMaterial < 50){
 		for(i=0;i<8;i++){
 			if(popCount(fileBitBoards[i] & board->BOTH) == 1){
+			      // Push for promotion
 				res = 0;
 				bb = fileBitBoards[i] & board->WHITE_PAWN;
 				tmp = popCount(bb);
@@ -409,8 +410,6 @@ int evalPos(BOARD *board){
 				score -= popCount(bb) * 15;
 				while (bb >>= 1) res++;
 				score+=r(res)*5;
-				//if(i !)
-				//if(!(fileBitBoards[i+1] & board->BLACK_PAWN &&)
 			}else{
 				//Double Pawns
 				bb = fileBitBoards[i] & board->WHITE_PAWN;
@@ -423,26 +422,27 @@ int evalPos(BOARD *board){
 				}
 			}
 		}
-	}
-	
-	if(board->kings[1] == 1){
-		if(popCount(board->WHITE_PAWN & wkingk) == 3){
-			score+=40;	
-		}else if(popCount(board->WHITE_PAWN & wkingka) == 3){
-			score+=25;	
-		}
-		if(1ULL << 2 & board->WHITE){
-			score+=15;	
-		}	
-	}else if(board->kings[1] == 5){
-		if(popCount(board->WHITE_PAWN & wkingq) == 3){
-			score+=40;	
-		}else if(popCount(board->WHITE_PAWN & wkingqa) == 3){
-			score+=25;	
-		}
-		if(1ULL << 4 & board->WHITE){
-			score+=15;	
-		}		
+	}else{
+	      // King protection
+	      if(board->kings[1] == 1){
+		      if(popCount(board->WHITE_PAWN & wkingk) == 3){
+		      	score+=40;	
+		      }else if(popCount(board->WHITE_PAWN & wkingka) == 3){
+		      	score+=25;	
+		      }
+		      if(1ULL << 2 & board->WHITE){
+		      	score+=15;	
+		      }	
+	      }else if(board->kings[1] == 5){
+		      if(popCount(board->WHITE_PAWN & wkingq) == 3){
+			      score+=40;	
+		      }else if(popCount(board->WHITE_PAWN & wkingqa) == 3){
+			      score+=25;	
+		      }
+		      if(1ULL << 4 & board->WHITE){
+			      score+=15;	
+		      }		
+	      }
 	}
 	
 	if(board->kings[0] == 57){
