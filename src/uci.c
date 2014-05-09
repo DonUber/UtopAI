@@ -1,7 +1,7 @@
 #include "stdio.h"
 #include "inc.h"
 #include "string.h"
-#define INPUTBUFFER 400*6 //stdin ipv dit?
+#define INPUTBUFFER 400*6
 
 static void go(char* line, SEARCHINFO *info, BOARD *board){
 	int depth = -1, movestogo = 30,inc=0;
@@ -51,7 +51,7 @@ static void go(char* line, SEARCHINFO *info, BOARD *board){
 	if(time != -1) {
 		info->timeset = 1;
 		time /= movestogo;
-		time -= 50;		
+		time -= 25;		
 		info->stoptime = info->starttime + time + inc;
 	} 
 	printf("time:%ld start:%ld stop:%ld depth:%d timeset:%ld\n",
@@ -60,7 +60,6 @@ static void go(char* line, SEARCHINFO *info, BOARD *board){
 }
 
 static void parsePos(char* line, BOARD *board){
-	//More efficient?
 	line += 9;
 	char *pChar = line;
 	if(!strncmp(line, "startboard",8)){
@@ -78,7 +77,6 @@ static void parsePos(char* line, BOARD *board){
 	pChar = strstr(line, "moves");
 	int move;
 	if(pChar != NULL){
-		//printf("IEOR!\n");
 		pChar += 6;
 		while(*pChar){
 			move = parseMove(pChar, board);
@@ -89,14 +87,13 @@ static void parsePos(char* line, BOARD *board){
 			pChar++;
 		}
 	}
-	//printBoard(board);	
 }
 void uciLoop(){
 	setbuf(stdin, NULL);
 	setbuf(stdout, NULL);
 	char line[INPUTBUFFER];
 	printf("id name %s\n", NAME);
-	printf("id author DonUber\n"); // Ook def?
+	printf("id author DonUber\n");
 	printf("uciok\n");
 	
 	// Start new game commands
@@ -151,7 +148,7 @@ int parseMove(char *moveChar, BOARD *pos){
 	int to = SQ2BIT(c, d);
 	
 	MOVELIST list[1];
-	genMoves(pos,list); //Store already calculated move in table?
+	genMoves(pos,list); //Store already calculated move in table
 	int nMove = 0;
 	int move = 0;
 	int promPiece = EMPTY;

@@ -443,26 +443,27 @@ int evalPos(BOARD *board){
 			      score+=15;	
 		      }		
 	      }
-	}
+
 	
-	if(board->kings[0] == 57){
-		if(popCount(board->BLACK_PAWN & bkingk) == 3){
-			score-=40;	
-		}else if(popCount(board->BLACK_PAWN & bkingka) == 3){
-			score-=25;	
-		}
-		if(1ULL << 58 & board->BLACK){
-			score-=15;	
-		}			
-	}else if(board->kings[0] == 61){
-		if(popCount(board->BLACK_PAWN & bkingq) == 3){
-			score-=40;	
-		}else if(popCount(board->BLACK_PAWN & bkingqa) == 3){
-			score-=25;	
-		}
-		if(1ULL << 60 & board->BLACK){
-			score-=15;	
-		}			
+	      if(board->kings[0] == 57){
+		      if(popCount(board->BLACK_PAWN & bkingk) == 3){
+		      	score-=40;	
+		      }else if(popCount(board->BLACK_PAWN & bkingka) == 3){
+		      	score-=25;	
+		      }
+		      if(1ULL << 58 & board->BLACK){
+		      	score-=15;	
+		      }			
+	      }else if(board->kings[0] == 61){
+	      	if(popCount(board->BLACK_PAWN & bkingq) == 3){
+		      	score-=40;	
+		      }else if(popCount(board->BLACK_PAWN & bkingqa) == 3){
+		      	score-=25;	
+		      }
+		      if(1ULL << 60 & board->BLACK){
+		      	score-=15;	
+		      }			
+	      }
 	}
 	
 	if(board->side == 1) {
