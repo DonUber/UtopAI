@@ -43,5 +43,4 @@ void perftTest(int depth, BOARD *pos) {
 	long nodesSec = (leafNodes*1000)/timeElap;
 	printf("\nTest Complete : %ld nodes visited in %ld ms at %ld nodes per second\n",leafNodes,timeElap, nodesSec);
 //printf("\nTest Complete : %ld nodes visited\n",leafNodes);
-    return;
 }
