@@ -4,7 +4,7 @@ long leafNodes;
 int perft (int depth, BOARD *pos){
 	if(depth==0){
 		leafNodes++;
-		return;
+		return 0;
 	}
 	MOVELIST list[1];
 	genMoves(pos,list);
