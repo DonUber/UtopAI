@@ -12,6 +12,10 @@ Specifications:
 TODO:
 
 - Null Move Pruning
-- Extend evaluation
+- Extend evaluation:
+	- Endgame pre-generated position bitboards
+	- King protection pre-generated bitboards
 - Extend usage of transposition table
 - Include book support
+- Code optimisation
+
