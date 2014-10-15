@@ -22,13 +22,32 @@ TODO:
 Compiling
 -----------
 
-~~make~~ will compile with the default flags
-~~make -sse~~ will compile with the sse and optimisation flags: -O3 -msse4.2 -mfpmath=sse -DUSE_SWAR
+```
+make
+```
+will compile with the default flags
+
+```
+make -sse
+```
+will compile with the sse and optimisation flags: -O3 -msse4.2 -mfpmath=sse -DUSE_SWAR
 
 Three POPCOUNT methods are implemented:
-~~DUSE_POPCNT~~ Will use "_mm_popcnt_u64" from smmintrin.h
-~~DUSE_SWAR~~ Uses [SWAR](https://chessprogramming.wikispaces.com/Population+Count#SWAR-Popcount) popcount method
-~~DUSE_LOOKUP~~ Uses the [lookup table](https://chessprogramming.wikispaces.com/Population+Count#Lookup) method
+
+```
+DUSE_POPCNT
+```
+Will use "_mm_popcnt_u64" from smmintrin.h
+
+```
+DUSE_SWAR
+```
+ Uses [SWAR](https://chessprogramming.wikispaces.com/Population+Count#SWAR-Popcount) popcount method
+ 
+```
+DUSE_LOOKUP
+```
+Uses the [lookup table](https://chessprogramming.wikispaces.com/Population+Count#Lookup) method
 
 Contact
 -----------
