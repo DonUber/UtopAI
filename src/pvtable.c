@@ -42,7 +42,6 @@ void initPvTable(PVTABLE *table){
 	//free(table->pTable);
 	table->pTable = (PVENTRY *) malloc(table->nEntries * sizeof(PVENTRY));
 	clearPvTable(table);
-	printf("PvTable init complete with %d entries\n",table->nEntries);
 }
 
 int probePvTable(const BOARD *board){

@@ -56,7 +56,7 @@ int setPos(char *fen, BOARD *board){
 			case 'Q': board->castlePerm |= 2; break;
 			case 'k': board->castlePerm |= 4; break;
 			case 'q': board->castlePerm |= 8; break;
-			default:	     break;
+			default: break;
         }
 		fen++;
 	}
@@ -67,11 +67,8 @@ int setPos(char *fen, BOARD *board){
 		char r = fen[1] - '1';		
 		board->enPas = SQ2BIT(f,r);		
     }
-    //printf("SIDE: %u\n", board->side);
-	//printf("enPas: %u\n", board->enPas);
-	//printf("CASTLE: %u\n", board->castlePerm);	
+
 	board->POS_KEY = genPosKey(board);
-	//printf("KEY: %llu\n", board->POS_KEY);
 
 	return 0;
 }
@@ -104,9 +101,6 @@ U64 genPosKey(const BOARD *board) {
 
 	U64 finalKey = 0;
 
-	//finalKey ^= board->WHITE;
-	//finalKey ^= board->BLACK;
-	//finalKey ^= board->BOTH;
 	finalKey ^= board->BLACK_PAWN;
 	finalKey ^= board->WHITE_PAWN;
 	finalKey ^= board->BLACK_KNIGHT;
