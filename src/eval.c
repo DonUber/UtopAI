@@ -340,8 +340,15 @@ int evalPos(BOARD *board){
 	// Material Eval
 	const int whiteMaterial = (cWhitePawn + 3 * (cWhiteKnight + cWhiteBishop) + 5 * cWhiteRook + 9 * cWhiteQueen);
 	const int blackMaterial = (cBlackPawn + 3 * (cBlackKnight + cBlackBishop) + 5 * cBlackRook + 9 * cBlackQueen);
-	score += (80+whiteMaterial/blackMaterial*20)*whiteMaterial;
-	score -= (80+blackMaterial/whiteMaterial*20)*blackMaterial;
+	
+	if(blackMaterial != 0){
+		score += (80+whiteMaterial/blackMaterial*20)*whiteMaterial;
+	}
+	
+	if(whiteMaterial != 0){
+		score -= (80+blackMaterial/whiteMaterial*20)*blackMaterial;
+	}
+	
 	if(cBlackBishop > 1){
 		score -= 30;	
 	}
