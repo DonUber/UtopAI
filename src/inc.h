@@ -109,6 +109,8 @@ extern long getTimeMs();
 extern U64 fileBitBoards[8];
 extern U64 rankBitBoards[8];
 
+extern void init();
+extern int parseMove(char *moveChar, BOARD *pos);
 extern void genMoves(BOARD *board, MOVELIST *list);
 extern void genCapMoves(BOARD *board, MOVELIST *list);
 extern int setPos(char *fen, BOARD *board);

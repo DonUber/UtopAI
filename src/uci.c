@@ -9,7 +9,7 @@ static void go(char* line, SEARCHINFO *info, BOARD *board){
 	char *pChar = NULL;
 	info->timeset = 0;
 
-	
+	// TODO: Test increment time
 	if ((pChar = strstr(line,"binc")) && board->side == 0) {
 		inc = atoi(pChar + 5);
 	}
