@@ -134,3 +134,5 @@ extern int getPvLine(const int depth, BOARD *board);
 extern void clearPvTable(PVTABLE *table);
 extern void initPvTable(PVTABLE *table);
 extern int probePvTable(const BOARD *board);
+extern void readInput(SEARCHINFO *info);
+extern int moveExists(BOARD *board, const int move);
