@@ -75,10 +75,8 @@ static void genKnightMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}else{
 			AddQuietMove(board, BITMOVE(i,tsq,0,0,0), list);
@@ -92,10 +90,8 @@ static void genKnightMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}else{
 			AddQuietMove(board, BITMOVE(i,tsq,0,0,0), list);
@@ -109,10 +105,8 @@ static void genKnightMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}else{
 			AddQuietMove(board, BITMOVE(i,tsq,0,0,0), list);
@@ -126,10 +120,8 @@ static void genKnightMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}else{
 			AddQuietMove(board, BITMOVE(i,tsq,0,0,0), list);
@@ -143,10 +135,8 @@ static void genKnightMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}else{
 			AddQuietMove(board, BITMOVE(i,tsq,0,0,0), list);
@@ -160,10 +150,8 @@ static void genKnightMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}else{
 			AddQuietMove(board, BITMOVE(i,tsq,0,0,0), list);
@@ -177,10 +165,8 @@ static void genKnightMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}else{
 			AddQuietMove(board, BITMOVE(i,tsq,0,0,0), list);
@@ -194,10 +180,8 @@ static void genKnightMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}else{
 			AddQuietMove(board, BITMOVE(i,tsq,0,0,0), list);
@@ -215,10 +199,8 @@ static void genRookMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 			break;
 		}else{
@@ -235,10 +217,8 @@ static void genRookMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 			break;
 		}else{
@@ -255,10 +235,8 @@ static void genRookMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 			break;
 		}else{
@@ -275,10 +253,8 @@ static void genRookMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 			break;
 		}else{
@@ -298,10 +274,8 @@ static void genKingMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}else{
 			AddQuietMove(board, BITMOVE(i,tsq,0,0,0), list);
@@ -315,10 +289,8 @@ static void genKingMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}else{
 			AddQuietMove(board, BITMOVE(i,tsq,0,0,0), list);
@@ -332,10 +304,8 @@ static void genKingMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}else{
 			AddQuietMove(board, BITMOVE(i,tsq,0,0,0), list);
@@ -349,10 +319,8 @@ static void genKingMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}else{
 			AddQuietMove(board, BITMOVE(i,tsq,0,0,0), list);
@@ -366,10 +334,8 @@ static void genKingMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}else{
 			AddQuietMove(board, BITMOVE(i,tsq,0,0,0), list);
@@ -383,10 +349,8 @@ static void genKingMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}else{
 			AddQuietMove(board, BITMOVE(i,tsq,0,0,0), list);
@@ -400,10 +364,8 @@ static void genKingMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}else{
 			AddQuietMove(board, BITMOVE(i,tsq,0,0,0), list);
@@ -417,10 +379,8 @@ static void genKingMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}else{
 			AddQuietMove(board, BITMOVE(i,tsq,0,0,0), list);
@@ -438,10 +398,8 @@ static void genBishopMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 			break;
 		}else{
@@ -458,10 +416,8 @@ static void genBishopMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 			break;
 		}else{
@@ -478,10 +434,8 @@ static void genBishopMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 			break;
 		}else{
@@ -498,10 +452,8 @@ static void genBishopMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 			break;
 		}else{
@@ -690,10 +642,8 @@ static void genKnightCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r)
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}
 	}
@@ -705,10 +655,8 @@ static void genKnightCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r)
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}
 	}
@@ -720,10 +668,8 @@ static void genKnightCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r)
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}
 	}										
@@ -735,10 +681,8 @@ static void genKnightCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r)
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}
 	}	
@@ -750,10 +694,8 @@ static void genKnightCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r)
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}
 	}
@@ -765,10 +707,8 @@ static void genKnightCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r)
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}
 	}
@@ -780,10 +720,8 @@ static void genKnightCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r)
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}
 	}		
@@ -795,10 +733,8 @@ static void genKnightCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r)
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}
 	}	
@@ -814,10 +750,8 @@ static void genRookCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 			break;
 		}
@@ -832,11 +766,9 @@ static void genRookCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}
 			break;
 		}
 		mv++;
@@ -850,10 +782,8 @@ static void genRookCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 			break;
 		}
@@ -868,10 +798,8 @@ static void genRookCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 			break;
 		}
@@ -889,10 +817,8 @@ static void genKingCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}
 	}
@@ -904,10 +830,8 @@ static void genKingCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}
 	}
@@ -919,10 +843,8 @@ static void genKingCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}
 	}
@@ -934,10 +856,8 @@ static void genKingCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}
 	}
@@ -949,10 +869,8 @@ static void genKingCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}
 	}
@@ -964,10 +882,8 @@ static void genKingCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}
 	}
@@ -979,10 +895,8 @@ static void genKingCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}
 	}
@@ -994,10 +908,8 @@ static void genKingCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r){
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 		}
 	}
@@ -1013,10 +925,8 @@ static void genBishopCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r)
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 			break;
 		}
@@ -1031,10 +941,8 @@ static void genBishopCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r)
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 			break;
 		}
@@ -1049,10 +957,8 @@ static void genBishopCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r)
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 			break;
 		}
@@ -1067,10 +973,8 @@ static void genBishopCapMoves(BOARD *board, MOVELIST *list, int i, int f, int r)
 				if(tc > 6){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
 				}
-			}else{
-				if(tc < 7){
+			}else if(tc < 7){
 					AddCaptureMove(board, BITMOVE(i,tsq,tc,0,0), list);
-				}
 			}
 			break;
 		}
